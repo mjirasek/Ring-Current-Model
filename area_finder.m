@@ -23,6 +23,31 @@ Ax = Ax/scale_factor;
 Ay = Ay/scale_factor;
 Az = Az/scale_factor;
 
+
+if 1
+if ~ispolycw(Z,Y)
+    Ax = -1*Ax;
+end
+
+if ~ispolycw(X,Z)
+    Ay = -1*Ay;
+end
+
+if ~ispolycw(Y,X)
+    Az = -1*Az;
+end
+end
+
+
+
+
+
+
+
+
+
+
+
 end
 
 
